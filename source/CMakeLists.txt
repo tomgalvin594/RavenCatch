@@ -1,0 +1,10 @@
+file(GLOB LOCAL_SOURCES
+	"*.hpp"
+	"*.cpp"
+)
+
+set(PROJECT_SOURCES
+	${PROJECT_SOURCES}
+	${LOCAL_SOURCES}
+	PARENT_SCOPE
+)
